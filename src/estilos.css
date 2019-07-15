@@ -1,0 +1,281 @@
+.animated {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.nextpage {
+    display: none !important;
+}
+
+body {
+    background-color: #b33939 !important;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 650px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+header {
+    width: 100% !important;
+    height: 10%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #b33939;
+}
+
+header img {
+    width: 120px !important;
+    height: 80px !important;
+    position: relative;
+    top: -3px;
+}
+
+h1 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    text-transform: uppercase;
+    font-size: 25px !important;
+    display: inline !important;
+}
+
+.main-container {
+    height: 90%;
+    width: 100%;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.setor-turno {
+    width: 100%;
+    height: 102%;
+    padding-top: 50px;
+}
+
+.setor-turno h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 35px;
+}
+
+.setor-turno input {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    width: 70px;
+    height: 25px;
+    outline: 1px solid #b33939;
+    border: none !important;
+    font-size: 12px !important;
+    text-align: center;
+}
+
+.legendaSetor {
+    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    margin: 20px 0 50px 0 !important;
+}
+
+.legendaSetor span {
+    margin-right: 15px !important; 
+}
+
+.legendaTurno {
+    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    margin-top: 20px !important;
+}
+
+.legendaTurno span {
+    margin-right: 15px !important; 
+}
+
+.btnNextPage {
+    position: relative !important;
+    bottom: -10px;
+    left: 80% !important;
+    border: none !important;
+    background: #b33939 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    border-radius: 3px;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btnNextPage:hover {
+    opacity: .9 !important;
+}
+
+.perguntas1 {
+    width: 100%;
+    height: 102%;
+}
+
+.perguntas1 h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 35px;
+}
+
+.perguntas1 span {
+    display: block !important;
+    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    margin: 20px 0 10px 0 !important;
+    font-weight: bold;
+}
+
+.perguntas1 input {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    width: 70px;
+    height: 25px;
+    outline: 1px solid #b33939;
+    border: none !important;
+    font-size: 12px !important;
+    text-align: center;
+}
+
+.legendaPerguntas {
+    display: flex !important;
+    line-height: 15px !important;
+}
+
+.legendaPerguntas span {
+    font-weight: 400 !important;
+    margin-right: 15px !important;
+}
+
+.perguntas2 {
+    width: 100%;
+    height: 102%;
+}
+
+.perguntas2 h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 35px;
+}
+
+.perguntas2 span {
+    display: block !important;
+    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    margin: 20px 0 10px 0 !important;
+    font-weight: bold;
+}
+
+.perguntas2 input {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    width: 70px;
+    height: 25px;
+    outline: 1px solid #b33939;
+    border: none !important;
+    font-size: 12px !important;
+    text-align: center;
+}
+
+.perguntas2 .legendaPerguntas span {
+    font-weight: 400 !important;
+    margin-right: 15px !important;
+}
+
+.perguntas3 {
+    width: 100%;
+    height: 102%;
+}
+
+.perguntas3 h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 35px;
+}
+
+.perguntas3 span {
+    display: block !important;
+    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    margin: 20px 0 10px 0 !important;
+    font-weight: bold;
+}
+
+.perguntas3 input {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    width: 70px;
+    height: 25px;
+    outline: 1px solid #b33939;
+    border: none !important;
+    font-size: 12px !important;
+    text-align: center;
+}
+
+.perguntas3 .legendaPerguntas span {
+    font-weight: 400 !important;
+    margin-right: 15px !important;
+}
+
+.perguntas3 .legendaPerguntas {
+    flex-wrap: wrap;
+    width: 80%;
+    line-height: 15px;
+}
+
+.perguntas4 {
+    width: 100%;
+    height: 102%;
+}
+
+.perguntas4 h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 35px;
+}
+
+.perguntas4 span {
+    display: block !important;
+    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    margin: 20px 0 10px 0 !important;
+    font-weight: bold;
+}
+
+.perguntas4 input {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    width: 100%;
+    height: 200px;
+    outline: 1px solid #b33939;
+    border: none !important;
+    font-size: 14px !important;
+    text-align: left;
+    padding: 0 10px;
+}
+
+#semiFinalBtn {
+    bottom: 30px !important;
+}
+
+#finalBtn {
+    bottom: 80px !important;
+}
