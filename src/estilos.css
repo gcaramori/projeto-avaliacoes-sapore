@@ -4,8 +4,12 @@
   animation-iteration-count: infinite;
 }
 
-.nextpage {
+.hide {
     display: none !important;
+}
+
+.show {
+    display: block !important;
 }
 
 body {
@@ -278,4 +282,132 @@ form {
 
 #finalBtn {
     bottom: 80px !important;
+}
+
+#listagem {
+    display: none;
+}
+
+.listagem {
+    width: 100%;
+    height: 102%;
+    padding-top: 20px;
+}
+
+.listagem h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 35px;
+}
+
+.listagem p {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.filtro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filtro span {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.select-setor,
+.select-turno {
+    margin-right: 25px;
+}
+
+.filtro select {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.btnBuscar {
+    position: relative !important;
+    bottom: -225px;
+    left: 69% !important;
+    border: none !important;
+    background: #b33939 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    border-radius: 3px;
+    width: 180px;
+    height: 35px;
+    color: #fff;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.botoes {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes button {
+    width: 150px;
+    height: 70px;
+    border: 2px solid transparent;
+    background: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    font-weight: 600;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btnCadastro {
+    margin-right: 10px;
+}
+
+#graficos {
+    width: 85vw;
+    height: 85vh;
+}
+
+#graficos h1 {
+    position: absolute;
+    top: 50px;
+}
+
+.title {
+    position: relative;
+    top: 115px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#graficos img {
+    width: 140px;
+    height: 95px;
+    position: absolute;
+    top: 25px;
+    right: 8vw;
+}
+
+#grafico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%)
 }

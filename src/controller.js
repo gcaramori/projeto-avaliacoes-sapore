@@ -1,3 +1,5 @@
+
+
 var elSetorTurno = $('.setor-turno')
 var elPergunta1 = $('.perguntas1')
 var elPergunta2 = $('.perguntas2')
@@ -10,7 +12,7 @@ $('.txtSetor').focus()
 
 $('.btnNextPage:eq(0)').click(function () {
     if (posicao == 0) {
-        $(elSetorTurno).addClass('nextpage')
+        $(elSetorTurno).addClass('hide')
         $('.txtPergunta1').focus()
         posicao++;
     }
@@ -18,7 +20,7 @@ $('.btnNextPage:eq(0)').click(function () {
 
 $('.btnNextPage:eq(1)').click(function () {
     if (posicao == 1) {
-        jQuery(elPergunta1).addClass('nextpage')
+        jQuery(elPergunta1).addClass('hide')
         $('.txtPergunta4').focus()
         posicao++;
     }
@@ -26,7 +28,7 @@ $('.btnNextPage:eq(1)').click(function () {
 
 $('.btnNextPage:eq(2)').click(function () {
     if (posicao == 2) {
-        jQuery(elPergunta2).addClass('nextpage')
+        jQuery(elPergunta2).addClass('hide')
         $('.txtPergunta7').focus()
         posicao++;
     }
@@ -34,7 +36,7 @@ $('.btnNextPage:eq(2)').click(function () {
 
 $('.btnNextPage:eq(3)').click(function () {
     if(posicao == 3) {
-        jQuery(elPergunta3).addClass('nextpage')
+        jQuery(elPergunta3).addClass('hide')
         $('.txtObs').focus()
         posicao++;
     }
@@ -43,12 +45,22 @@ $('.btnNextPage:eq(3)').click(function () {
 $('.btnNextPage:eq(4)').click(function () {
     if (posicao == 4) {
         alert('Avaliação cadastrada!')
-        $('form[name="form"]').submit()
+        $('#formCadastra').submit()
         limpar()
         $('.txtSetor').focus()
-        jQuery(elSetorTurno).removeClass('nextpage')
+        jQuery(elSetorTurno).removeClass('hide')
         posicao = 0;
     }
+})
+
+$('.btnCadastro').click(function() {
+    $('#listagem').removeClass('show')
+    $('#cadastro').removeClass('hide')
+})
+
+$('.btnListar').click(function() {
+    $('#listagem').addClass('show')
+    $('#cadastro').addClass('hide')
 })
 
 function limpar() {
@@ -64,3 +76,18 @@ function limpar() {
     $('.txtPergunta8').val('')
     $('.txtPergunta9').val('')
 }
+
+/*$('#formListar').submit(function (e) {
+    e.preventDefault();
+    var fd = new FormData($(this)[0]);
+    $.ajax({
+        url: '/pload',
+        data: fd,
+        processData: false,
+        contentType: false,
+        type: 'POST',
+        success: function(data){
+            console.log(data);
+        }
+    });
+});*/

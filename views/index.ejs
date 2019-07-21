@@ -14,19 +14,24 @@
 </head>
 
 <body>
-    <main>
+    <div class="botoes">
+        <button type="button" class="btnCadastro"> Cadastrar </button>
+        <button type="button" class="btnListar"> Listar </button>
+    </div>
+
+    <main id="cadastro">
         <header>
             <h1> Pesquisa de satisfação </h1>
             <img src="406dbd6cff60e9a624845c11ff232c8cd00f5e52.jpg" alt="logo">
         </header>
 
         <div class="main-container">
-            <form name="form" method="POST" action="/cadastra">
+            <form id="formCadastra" name="form" method="POST" action="/cadastra">
                 <div class="setor-turno">
                     <h2> Qual é o seu setor? </h2>
 
 
-                    <input type="number" class="txtSetor" name="setor" required>
+                    <input type="number" class="txtSetor" name="setor" required maxlength="1">
                     <div class="legendaSetor">
                         <span> 1 - Administrativo </span>
                         <span> 2 - Operacional </span>
@@ -184,11 +189,57 @@
                 </div>
 
                 <button type="button" id="finalBtn" class="btnNextPage"> Finalizar </button>
+                <a href="localhost:3000/" class="btnVoltar"> Cadastrar outra </a>
             </form>
         </div>
     </main>
 
-    <script src="index.js"> </script>
+    <main id="listagem">
+            <header>
+                <h1> Pesquisa de satisfação </h1>
+                <img src="406dbd6cff60e9a624845c11ff232c8cd00f5e52.jpg" alt="logo">
+            </header>
+    
+            <div class="main-container">
+                <div class="listagem">
+                    <h2> Resultados </h2>
+    
+                    <form id="formListar" name="form" method="GET" action="/lista">
+                        <p>Filtrar por: </p>
+    
+                        <div class="filtro">
+                            <span> Setor </span>
+                            <select name="setor" class="select-setor">
+                                <option value=""> Selecione.. </option>
+                                <option value="1"> Administrativo </option>
+                                <option value="2"> Operacional </option>
+                                <option value="3"> Terceirizado </option>
+                                <option value="4"> Estagiário/Aprendiz </option>
+                            </select>
+    
+                            <span> Turno </span>
+                            <select name="turno" class="select-turno">
+                                <option value=""> Selecione.. </option>
+                                <option value="1"> Almoco </option>
+                                <option value="2"> Janta </option>
+                                <option value="3"> Ceia </option>
+                            </select>
+    
+                            <!--<span> Obs </span>
+                            <select class="select-obs">
+                                <option value=""> Selecione.. </option>
+                                <option value="0"> Sim </option>
+                                <option value="1"> Não </option>
+                            </select>-->
+                        </div>
+    
+                        <button type="submit" class="btnBuscar"> Gerar gráficos </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+    <script src="controller.js"> </script>
 </body>
 
 </html>
