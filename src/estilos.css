@@ -310,6 +310,8 @@ form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
 }
 
 .filtro span {
@@ -321,6 +323,11 @@ form {
 .select-setor,
 .select-turno {
     margin-right: 25px;
+}
+
+.select-pergunta,
+.spanPergunta {
+    margin-top: 30px;
 }
 
 .filtro select {
@@ -347,7 +354,7 @@ form {
 
 .botoes {
     position: absolute;
-    top: 60px;
+    top: 25px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -355,8 +362,8 @@ form {
 }
 
 .botoes button {
-    width: 150px;
-    height: 70px;
+    width: 130px;
+    height: 35px;
     border: 2px solid transparent;
     background: #fff;
     font-size: 14px;
