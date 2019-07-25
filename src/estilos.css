@@ -380,8 +380,9 @@ form {
 }
 
 #graficos {
-    width: 85vw;
-    height: 85vh;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
 }
 
 #graficos h1 {
@@ -412,9 +413,11 @@ form {
     right: 8vw;
 }
 
-#grafico {
+.grafico-container {
+    width: 900px !important;
+    height: 900px !important;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%)
+    transform: translate(-50%, -15%)
 }
