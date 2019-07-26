@@ -1,7 +1,7 @@
 .animated {
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 }
 
 .hide {
@@ -20,8 +20,8 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 650px;
-    height: 600px;
+    width: 750px;
+    height: 650px;
     transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: #fff;
@@ -62,50 +62,38 @@ form {
     height: 100%;
     width: 100%;
     padding: 10px;
-    overflow: hidden;
-}
-
-.setor-turno {
-    width: 100%;
-    height: 102%;
-    padding-top: 50px;
-}
-
-.setor-turno h2 {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
-    font-size: 20px !important;
-    display: block !important;
-    margin-bottom: 35px;
-}
-
-.setor-turno input {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
-    width: 70px;
-    height: 25px;
-    outline: 1px solid #b33939;
-    border: none !important;
-    font-size: 12px !important;
-    text-align: center;
+    overflow-y: scroll;
 }
 
 .legendaSetor {
-    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
     font-size: 14px !important;
     margin: 20px 0 50px 0 !important;
 }
 
-.legendaSetor span {
-    margin-right: 15px !important; 
+.legendaPerguntas {
+    margin: 10px 0 30px;
 }
 
-.legendaTurno {
-    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
-    font-size: 14px !important;
-    margin-top: 20px !important;
+.legendaPerguntas span {
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
 }
 
-.legendaTurno span {
-    margin-right: 15px !important; 
+.select-setor,
+.select-turno {
+    margin-right: 25px;
+}
+
+.select-pergunta,
+.spanPergunta {
+    margin-top: 30px;
+}
+
+.filtro select {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 .btnNextPage {
@@ -129,125 +117,25 @@ form {
     opacity: .9 !important;
 }
 
-.perguntas1 {
-    width: 100%;
-    height: 102%;
-}
-
-.perguntas1 h2 {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
-    font-size: 20px !important;
-    display: block !important;
-    margin-bottom: 35px;
-}
-
-.perguntas1 span {
-    display: block !important;
-    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
-    font-size: 14px !important;
-    margin: 20px 0 10px 0 !important;
+#formCadastra p {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 16px;
     font-weight: bold;
 }
 
-.perguntas1 input {
+.setor-turno input {
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
-    width: 70px;
+    width: 75px;
     height: 25px;
     outline: 1px solid #b33939;
     border: none !important;
-    font-size: 12px !important;
-    text-align: center;
-}
-
-.legendaPerguntas {
-    display: flex !important;
-    line-height: 15px !important;
-}
-
-.legendaPerguntas span {
-    font-weight: 400 !important;
-    margin-right: 15px !important;
-}
-
-.perguntas2 {
-    width: 100%;
-    height: 102%;
-}
-
-.perguntas2 h2 {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
-    font-size: 20px !important;
-    display: block !important;
-    margin-bottom: 35px;
-}
-
-.perguntas2 span {
-    display: block !important;
-    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
     font-size: 14px !important;
-    margin: 20px 0 10px 0 !important;
-    font-weight: bold;
-}
-
-.perguntas2 input {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
-    width: 70px;
-    height: 25px;
-    outline: 1px solid #b33939;
-    border: none !important;
-    font-size: 12px !important;
-    text-align: center;
-}
-
-.perguntas2 .legendaPerguntas span {
-    font-weight: 400 !important;
-    margin-right: 15px !important;
-}
-
-.perguntas3 {
-    width: 100%;
-    height: 102%;
-}
-
-.perguntas3 h2 {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
-    font-size: 20px !important;
-    display: block !important;
-    margin-bottom: 35px;
-}
-
-.perguntas3 span {
-    display: block !important;
-    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
-    font-size: 14px !important;
-    margin: 20px 0 10px 0 !important;
-    font-weight: bold;
-}
-
-.perguntas3 input {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
-    width: 70px;
-    height: 25px;
-    outline: 1px solid #b33939;
-    border: none !important;
-    font-size: 12px !important;
-    text-align: center;
-}
-
-.perguntas3 .legendaPerguntas span {
-    font-weight: 400 !important;
-    margin-right: 15px !important;
-}
-
-.perguntas3 .legendaPerguntas {
-    flex-wrap: wrap;
-    width: 80%;
-    line-height: 15px;
+    padding: 0 3px;
 }
 
 .perguntas4 {
     width: 100%;
-    height: 102%;
+    height: 20%;
 }
 
 .perguntas4 h2 {
@@ -259,21 +147,23 @@ form {
 
 .perguntas4 span {
     display: block !important;
-    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif !important;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
     font-size: 14px !important;
     margin: 20px 0 10px 0 !important;
     font-weight: bold;
+    width: 100%;
+    height: 20%;
 }
 
 .perguntas4 input {
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
-    width: 100%;
+    width: 75%;
     height: 200px;
     outline: 1px solid #b33939;
     border: none !important;
     font-size: 14px !important;
-    text-align: left;
-    padding: 0 10px;
+    text-align: center;
+    padding: 0 3px;
 }
 
 #semiFinalBtn {
@@ -282,6 +172,7 @@ form {
 
 #finalBtn {
     bottom: 80px !important;
+    position: end !important;
 }
 
 #listagem {
@@ -292,6 +183,136 @@ form {
     width: 100%;
     height: 102%;
     padding-top: 20px;
+}
+
+.listagem h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    display: block !important;
+    margin-bottom: 35px;
+}
+
+.listagem p {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.filtro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filtro span {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.select-setor,
+.select-turno {
+    margin-right: 25px;
+}
+
+.filtro select {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#listagem {
+    display: none;
+}
+
+.listagem {
+    width: 100%;
+    height: 102%;
+    padding-top: 20px;
+}
+
+.listagem h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 35px;
+}
+
+.listagem p {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.btnBuscar {
+    position: relative !important;
+    bottom: -225px;
+    left: 69% !important;
+    border: none !important;
+    background: #b33939 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    border-radius: 3px;
+    width: 180px;
+    height: 35px;
+    color: #fff;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.botoes {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes button {
+    width: 150px;
+    height: 70px;
+    border: 2px solid transparent;
+    background: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    font-weight: 600;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btnCadastro {
+    margin-right: 5px;
+}
+
+#graficos {
+    width: 100vw;
+    height: 100vh;
+}
+
+#graficos h1 {
+    position: absolute;
+    top: 50px;
+}
+
+.title {
+    position: relative;
+    top: 115px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 .listagem h2 {
@@ -335,76 +356,6 @@ form {
     font-size: 14px;
 }
 
-.btnBuscar {
-    position: relative !important;
-    bottom: -225px;
-    left: 69% !important;
-    border: none !important;
-    background: #b33939 !important;
-    font-size: 12px !important;
-    text-transform: uppercase !important;
-    border-radius: 3px;
-    width: 180px;
-    height: 35px;
-    color: #fff;
-    font-weight: 700 !important;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-.botoes {
-    position: absolute;
-    top: 25px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.botoes button {
-    width: 130px;
-    height: 35px;
-    border: 2px solid transparent;
-    background: #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #111;
-    font-weight: 600;
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    cursor: pointer;
-}
-
-.btnCadastro {
-    margin-right: 10px;
-}
-
-#graficos {
-    width: 100vw;
-    height: 100vh;
-    padding: 10px;
-}
-
-#graficos h1 {
-    position: absolute;
-    top: 50px;
-}
-
-.title {
-    position: relative;
-    top: 115px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title h2 {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
 #graficos img {
     width: 140px;
     height: 95px;
@@ -414,10 +365,32 @@ form {
 }
 
 .grafico-container {
-    width: 900px !important;
-    height: 900px !important;
+    width: 950px;
+}
+
+#grafico {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -15%)
+    transform: translate(-50%, -30%)
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-height: 800px) {
+    .botoes {
+        top: 20px;
+    }
+
+    #cadastro {
+        width: 700px;
+        height: 600px;
+        transform: translate(-50%, -45%);
+    }
+
+    #listagem {
+        width: 700px;
+        height: 600px;
+        transform: translate(-50%, -45%);
+    }
 }

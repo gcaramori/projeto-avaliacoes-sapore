@@ -6,10 +6,8 @@
     <title>Cadastro de avaliações</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Bahianita|Lato|Roboto+Slab&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Bahianita|Lato|Roboto+Slab&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -28,205 +26,178 @@
         <div class="main-container">
             <form id="formCadastra" name="form" method="POST" action="/cadastra">
                 <div class="setor-turno">
-                    <h2> Qual é o seu setor? </h2>
+                    <p> Qual é o seu setor? </p>
 
 
-                    <input type="number" class="txtSetor" name="setor" required maxlength="1">
-                    <div class="legendaSetor">
+                    <input type="tel" class="txtSetor inputs" name="setor" required maxlength="1">
+                    <div class="legendaPerguntas">
                         <span> 1 - Administrativo </span>
                         <span> 2 - Operacional </span>
                         <span> 3 - Terceirizado </span>
                         <span> 4 - Estagiário/Aprendiz </span>
                     </div>
 
-                    <h2> Qual refeição você costuma fazer no restaurante? </h2>
-                    <input type="number" class="txtTurno" name="turno" required>
-                    <div class="legendaTurno">
+                    <p>Qual refeição você costuma fazer no restaurante? </p>
+                    <input type="tel" class="txtTurno inputs" name="turno" required maxlength="1">
+                    <div class="legendaPerguntas">
                         <span> 1 - Almoço </span>
                         <span> 2 - Janta </span>
                         <span> 3 - Ceia </span>
                     </div>
 
-                    <button type="button" class="btnNextPage"> Próximo </button>
-
-                </div>
-
-                <div class="perguntas1">
-
-                    <h2> Perguntas </h2>
-
-
-                    <div class="pergunta1">
-                        <span> Como você avalia a qualidade das refeições servidas? </span>
-                        <input type="number" class="txtPergunta1" name="pergunta1" required>
-                        <div class="legendaPerguntas">
-                            <span> 1 - Muito bom </span>
-                            <span> 2 - Bom </span>
-                            <span> 3 - Regular </span>
-                            <span> 4 - Ruim </span>
-                            <span> 5 - Muito ruim </span>
-                        </div>
-                    </div>
-                    <div class="pergunta2">
-                        <span> O que você acha da variedade do cardápio e dos serviços? </span>
-                        <input type="number" class="txtPergunta2" name="pergunta2" required>
-                        <div class="legendaPerguntas">
-                            <span> 1 - Muito bom </span>
-                            <span> 2 - Bom </span>
-                            <span> 3 - Regular </span>
-                            <span> 4 - Ruim </span>
-                            <span> 5 - Muito ruim </span>
-                        </div>
-                    </div>
-                    <div class="pergunta3">
-                        <span> O que você acha da temperatura das preparações? </span>
-                        <input type="number" class="txtPergunta3" name="pergunta3" required>
-                        <div class="legendaPerguntas">
-                            <span> 1 - Muito bom </span>
-                            <span> 2 - Bom </span>
-                            <span> 3 - Regular </span>
-                            <span> 4 - Ruim </span>
-                            <span> 5 - Muito ruim </span>
-                        </div>
+                    <p>1- Como você avalia a qualidade das refeições servidas? </p>
+                    <input type="tel" class="txtPergunta1 inputs" name="pergunta1" required maxlength="1">
+                    <div class="legendaPerguntas">
+                        <span> 1 - Muito bom </span>
+                        <span> 2 - Bom </span>
+                        <span> 3 - Regular </span>
+                        <span> 4 - Ruim </span>
+                        <span> 5 - Muito ruim </span>
                     </div>
 
-                    <button type="button" class="btnNextPage"> Próximo </button>
-                </div>
 
-                <div class="perguntas2">
-
-                    <h2> Perguntas </h2>
-
-                    <div class="pergunta4">
-                        <span> O que você acha da aparência dos pratos? </span>
-                        <input type="number" class="txtPergunta4" name="pergunta4" required>
-                        <div class="legendaPerguntas">
-                            <span> 1 - Muito bom </span>
-                            <span> 2 - Bom </span>
-                            <span> 3 - Regular </span>
-                            <span> 4 - Ruim </span>
-                            <span> 5 - Muito ruim </span>
-                        </div>
-                    </div>
-                    <div class="pergunta5">
-                        <span> O que você acha do tempero e sabor? </span>
-                        <input type="number" class="txtPergunta5" name="pergunta5" required>
-                        <div class="legendaPerguntas">
-                            <span> 1 - Muito bom </span>
-                            <span> 2 - Bom </span>
-                            <span> 3 - Regular </span>
-                            <span> 4 - Ruim </span>
-                            <span> 5 - Muito ruim </span>
-                        </div>
-                    </div>
-                    <div class="pergunta6">
-                        <span> O que você acha da higiene e da limpeza? </span>
-                        <input type="number" class="txtPergunta6" name="pergunta6" required>
-                        <div class="legendaPerguntas">
-                            <span> 1 - Muito bom </span>
-                            <span> 2 - Bom </span>
-                            <span> 3 - Regular </span>
-                            <span> 4 - Ruim </span>
-                            <span> 5 - Muito ruim </span>
-                        </div>
+                    <p>2- O que você acha da variedade do cardápio e dos serviços? </p>
+                    <input type="tel" class="txtPergunta2 inputs" name="pergunta2" required maxlength="1">
+                    <div class="legendaPerguntas">
+                        <span> 1 - Muito bom </span>
+                        <span> 2 - Bom </span>
+                        <span> 3 - Regular </span>
+                        <span> 4 - Ruim </span>
+                        <span> 5 - Muito ruim </span>
                     </div>
 
-                    <button type="button" class="btnNextPage"> Próximo </button>
-                </div>
 
-                <div class="perguntas3">
-
-                    <h2> Perguntas </h2>
-
-                    <div class="pergunta7">
-                        <span> O que você acha da qualidade do atendimento? </span>
-                        <input type="number" class="txtPergunta7" name="pergunta7" required>
-                        <div class="legendaPerguntas">
-                            <span> 1 - Muito bom </span>
-                            <span> 2 - Bom </span>
-                            <span> 3 - Regular </span>
-                            <span> 4 - Ruim </span>
-                            <span> 5 - Muito ruim </span>
-                        </div>
-                    </div>
-                    <div class="pergunta8">
-                        <span> Em geral, como você avalia nossos serviços? </span>
-                        <input type="number" class="txtPergunta8" name="pergunta8" required>
-                        <div class="legendaPerguntas">
-                            <span> 1 - Muito bom </span>
-                            <span> 2 - Bom </span>
-                            <span> 3 - Regular </span>
-                            <span> 4 - Ruim </span>
-                            <span> 5 - Muito ruim </span>
-                        </div>
-                    </div>
-                    <div class="pergunta9">
-                        <span> Em geral, como você avalia o desjejum? </span>
-                        <input type="number" class="txtPergunta9" name="pergunta9" required>
-                        <div class="legendaPerguntas">
-                            <span> 1 - Muito bom </span>
-                            <span> 2 - Bom </span>
-                            <span> 3 - Regular </span>
-                            <span> 4 - Ruim </span>
-                            <span> 5 - Muito ruim </span>
-                            <span> 6 - Não consumo </span>
-                        </div>
+                    <p>3- O que você acha da temperatura das preparações? </p>
+                    <input type="tel" class="txtPergunta3 inputs" name="pergunta3" required maxlength="1">
+                    <div class="legendaPerguntas">
+                        <span> 1 - Muito bom </span>
+                        <span> 2 - Bom </span>
+                        <span> 3 - Regular </span>
+                        <span> 4 - Ruim </span>
+                        <span> 5 - Muito ruim </span>
                     </div>
 
-                    <button type="button" id="semiFinalBtn" class="btnNextPage"> Próximo </button>
+
+
+                    <p>4- O que você acha da aparência dos pratos? </p>
+                    <input type="tel" class="txtPergunta4 inputs" name="pergunta4" required maxlength="1">
+                    <div class="legendaPerguntas">
+                        <span> 1 - Muito bom </span>
+                        <span> 2 - Bom </span>
+                        <span> 3 - Regular </span>
+                        <span> 4 - Ruim </span>
+                        <span> 5 - Muito ruim </span>
+
+                    </div>
+
+                    <p>5- O que você acha do tempero e sabor? </p>
+                    <input type="tel" class="txtPergunta5 inputs" name="pergunta5" required maxlength="1">
+                    <div class="legendaPerguntas">
+                        <span> 1 - Muito bom </span>
+                        <span> 2 - Bom </span>
+                        <span> 3 - Regular </span>
+                        <span> 4 - Ruim </span>
+                        <span> 5 - Muito ruim </span>
+                    </div>
+
+
+                    <p>6- O que você acha da higiene e da limpeza? </p>
+                    <input type="tel" class="txtPergunta6 inputs" name="pergunta6" required maxlength="1">
+                    <div class="legendaPerguntas">
+                        <span> 1 - Muito bom </span>
+                        <span> 2 - Bom </span>
+                        <span> 3 - Regular </span>
+                        <span> 4 - Ruim </span>
+                        <span> 5 - Muito ruim </span>
+
+                    </div>
+
+
+
+
+
+                    <p>7- O que você acha da qualidade do atendimento? </p>
+                    <input type="tel" class="txtPergunta7 inputs" name="pergunta7" required maxlength="1">
+                    <div class="legendaPerguntas">
+                        <span> 1 - Muito bom </span>
+                        <span> 2 - Bom </span>
+                        <span> 3 - Regular </span>
+                        <span> 4 - Ruim </span>
+                        <span> 5 - Muito ruim </span>
+
+                    </div>
+
+                    <p>8- Em geral, como você avalia nossos serviços? </p>
+                    <input type="tel" class="txtPergunta8 inputs" name="pergunta8" required maxlength="1">
+                    <div class="legendaPerguntas">
+                        <span> 1 - Muito bom </span>
+                        <span> 2 - Bom </span>
+                        <span> 3 - Regular </span>
+                        <span> 4 - Ruim </span>
+                        <span> 5 - Muito ruim </span>
+
+                    </div>
+
+                    <p>9- Em geral, como você avalia o desjejum? </p>
+                    <input type="tel" class="txtPergunta9 inputs" name="pergunta9" required maxlength="1">
+                    <div class="legendaPerguntas">
+                        <span> 1 - Muito bom </span>
+                        <span> 2 - Bom </span>
+                        <span> 3 - Regular </span>
+                        <span> 4 - Ruim </span>
+                        <span> 5 - Muito ruim </span>
+
+                    </div>
                 </div>
 
                 <div class="perguntas4">
 
-                    <h2> Perguntas </h2>
-
 
                     <div class="obs">
                         <span> Comentários e sugestões? </span>
-                        <input type="textarea" class="txtObs" rows="4" name="obs">
+                        <input type="textarea" class="txtObs input" rows="4" name="obs">
                     </div>
-
+                    <button type="button" id="finalBtn" class="btnNextPage"> Finalizar </button>
                 </div>
 
-                <button type="button" id="finalBtn" class="btnNextPage"> Finalizar </button>
-                <a href="localhost:3000/" class="btnVoltar"> Cadastrar outra </a>
+
             </form>
         </div>
     </main>
 
     <main id="listagem">
-            <header>
-                <h1> Pesquisa de satisfação </h1>
-                <img src="406dbd6cff60e9a624845c11ff232c8cd00f5e52.jpg" alt="logo">
-            </header>
-    
-            <div class="main-container">
-                <div class="listagem">
-                    <h2> Resultados </h2>
-    
-                    <form id="formListar" name="form" method="GET" action="/lista">
-                        <p>Filtrar por: </p>
-    
-                        <div class="filtro">
-                            <span> Setor </span>
-                            <select name="setor" class="select-setor">
+        <header>
+            <h1> Pesquisa de satisfação </h1>
+            <img src="406dbd6cff60e9a624845c11ff232c8cd00f5e52.jpg" alt="logo">
+        </header>
+
+        <div class="main-container">
+            <div class="listagem">
+                <h2> Resultados </h2>
+
+                <form id="formListar" name="form" method="GET" action="/lista">
+                    <p>Filtrar por: </p>
+
+                    <div class="filtro">
+                        <span> Setor </span>
+                        <select name="setor" class="select-setor">
                                 <option value=""> Selecione.. </option>
                                 <option value="1"> Administrativo </option>
                                 <option value="2"> Operacional </option>
                                 <option value="3"> Terceirizado </option>
                                 <option value="4"> Estagiário/Aprendiz </option>
                             </select>
-    
-                            <span> Turno </span>
-                            <select name="turno" class="select-turno">
+
+                        <span> Turno </span>
+                        <select name="turno" class="select-turno">
                                 <option value=""> Selecione.. </option>
                                 <option value="1"> Almoco </option>
                                 <option value="2"> Janta </option>
                                 <option value="3"> Ceia </option>
                             </select>
-                            
-                            <span class="spanPergunta"> Pergunta </span>
-                            <select name="pergunta" class="select-pergunta">
+
+                        <span class="spanPergunta"> Pergunta </span>
+                        <select name="pergunta" class="select-pergunta">
                                 <option value=""> Selecione.. </option>
                                 <option value="pergunta1"> 1 </option>
                                 <option value="pergunta2"> 2 </option>
@@ -239,21 +210,22 @@
                                 <option value="pergunta9"> 9 </option>
                             </select>
 
-                            <!--<span> Obs </span>
+                        <!--<span> Obs </span>
                             <select class="select-obs">
                                 <option value=""> Selecione.. </option>
                                 <option value="0"> Sim </option>
                                 <option value="1"> Não </option>
                             </select>-->
-                        </div>
-    
-                        <button type="submit" class="btnBuscar"> Gerar gráficos </button>
-                    </form>
-                </div>
-            </div>
-        </main>
+                    </div>
 
-    <script src="controller.js"> </script>
+                    <button type="submit" class="btnBuscar"> Gerar gráficos </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="controller.js">
+    </script>
 </body>
 
 </html>
