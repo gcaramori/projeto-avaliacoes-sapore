@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Cadastro de avaliações</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Bahianita|Lato|Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+    <main id="comentarios">
+        <div class="titulo">
+            <h1> Comentários e observações </h1>
+            <img src="406dbd6cff60e9a624845c11ff232c8cd00f5e52.jpg">
+        </div>
+
+        <div class="container">
+            <% data.forEach(function(details) { %>
+            <span class="comentario">" <%= details._id %> "</span>
+            <% }) %>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -175,7 +175,7 @@
             <div class="listagem">
                 <h2> Resultados </h2>
 
-                <form id="formListar" name="form" method="GET" action="/lista">
+                <form id="formListar" name="form" method="GET" action="/listar">
                     <p>Filtrar por: </p>
 
                     <div class="filtro">
@@ -208,15 +208,12 @@
                                 <option value="pergunta7"> 7 </option>
                                 <option value="pergunta8"> 8 </option>
                                 <option value="pergunta9"> 9 </option>
-                            </select>
+                        </select>
 
-                        <!--<span> Obs </span>
-                            <select class="select-obs">
-                                <option value=""> Selecione.. </option>
-                                <option value="0"> Sim </option>
-                                <option value="1"> Não </option>
-                            </select>-->
                     </div>
+
+                    <span class="listar-obs"> Ver observações e comentários </span>
+                    <span class="listar-obs-turno" > Ver observações e comentários pelo turno </span>
 
                     <button type="submit" class="btnBuscar"> Gerar gráficos </button>
                 </form>

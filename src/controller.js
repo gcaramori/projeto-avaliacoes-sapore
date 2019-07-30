@@ -6,7 +6,6 @@ var elPergunta4 = $('.perguntas4')
 
 var posicao = 0
 
-console.log('teste');
 const $inputs = $('.inputs');
 $inputs.keyup(function(e) {
     if (this.value.length === this.maxLength) {
@@ -44,6 +43,26 @@ $('.btnListar').click(function() {
     $('#listagem').addClass('show')
     $('#cadastro').removeClass('show')
 })
+
+$('.listar-obs').click(function() {
+    window.location = '/listar-obs'
+})
+
+$('.listar-obs-turno').click(function() {
+    window.location = '/listar-obs-turno' + $('.select-turno').val()
+})
+
+$('.select-turno').change(function() {
+    if($(this).val() != '') {
+        $('.listar-obs').addClass('hide')
+        $('.listar-obs-turno').addClass('show')
+    }
+    else {
+        $('.listar-obs').removeClass('hide')
+        $('.listar-obs-turno').removeClass('show')
+    }
+})
+
 
 function limpar() {
     $('.txtSetor').val('')

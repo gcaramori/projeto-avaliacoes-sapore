@@ -179,6 +179,10 @@ form {
     display: none;
 }
 
+#listagem form {
+    overflow: hidden !important;
+}
+
 .listagem {
     width: 100%;
     height: 102%;
@@ -248,7 +252,7 @@ h2 {
 
 .btnBuscar {
     position: relative !important;
-    bottom: -200px;
+    bottom: -180px;
     left: 69% !important;
     border: none !important;
     background: #b33939 !important;
@@ -373,6 +377,67 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -30%)
+}
+
+.listar-obs {
+    position: relative;
+    top: 100px;
+    display: block;
+    text-decoration: none;
+    color: #111;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.listar-obs:hover {
+    color: #111;
+    opacity: .8;
+    text-decoration: none;
+}
+
+.listar-obs-turno {
+    position: relative;
+    top: 100px;
+    display: none;  
+    text-decoration: none;
+    color: #111;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.listar-obs-turno:hover {
+    color: #111;
+    opacity: .8;
+    text-decoration: none;
+}
+
+#comentarios .titulo {
+    width: 100% !important;
+    height: 10%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #b33939;
+}
+
+#comentarios img {
+    width: 120px;
+    height: 80px;
+    position: relative;
+    top: -3px;
+}
+
+#comentarios .container {
+    overflow-y: scroll;
+    height: 85%;
+}
+    
+.comentario {
+    text-align: justify;
+    display: block;
+    margin: 10px 0 25px 0;
+    text-transform: capitalize;
 }
 
 /* MEDIA QUERIES */

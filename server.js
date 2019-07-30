@@ -34,7 +34,7 @@ app.post('/cadastra', (req, res) => {
     })
 })
 
-app.get('/lista', (req, res) => {
+app.get('/listar', (req, res) => {
     var filtroSetor = req.originalUrl.split('?')[1].split('&')[0].split('=')[1].trim()
     var filtroTurno = req.originalUrl.split('?')[1].split('&')[1].split('=')[1].trim()
     var filtroPergunta = req.originalUrl.split('?')[1].split('&')[2].split('=')[1].trim()
@@ -510,8 +510,68 @@ app.get('/lista', (req, res) => {
         </html>
         `)
 
+    })
+
 })
 
+app.get('/listar-obs', (req, res) => {
+    db.collection('avaliacoes').aggregate([{
+        '$group': {
+            '_id':'$obs'
+        }
+    }]).toArray((err, results) => {
+        if (err) return console.log(err)
+        res.render('showObs.ejs', { data: results })
+
+    })  
+})
+
+app.get('/listar-obs-turno1', (req, res) => {
+    
+    db.collection('avaliacoes').aggregate([{
+        '$match': {
+            'turno':'1'
+        }},
+        {'$group': {
+            '_id':'$obs'
+        }
+    }]).toArray((err, results) => {
+        if (err) return console.log(err)
+        res.render('showObs.ejs', { data: results })
+
+    })  
+})
+
+app.get('/listar-obs-turno2', (req, res) => {
+    
+    db.collection('avaliacoes').aggregate([{
+        '$match': {
+            'turno':'2'
+        }},
+        {'$group': {
+            '_id':'$obs'
+        }
+    }]).toArray((err, results) => {
+        if (err) return console.log(err)
+        res.render('showObs.ejs', { data: results })
+
+    })  
+})
+
+app.get('/listar-obs-turno3', (req, res) => {
+    
+    db.collection('avaliacoes').aggregate([{
+        '$match': {
+            'turno':'3'
+        }},
+        {'$group': {
+            '_id':'$obs'
+        }
+    }]).toArray((err, results) => {
+        if (err) return console.log(err)
+        res.render('showObs.ejs', { data: results })
+
+    })  
 })
 
 app.set('view engine', 'ejs')
